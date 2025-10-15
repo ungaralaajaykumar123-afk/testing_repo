@@ -1,0 +1,156 @@
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project
+$ git --version
+git version 2.51.0.windows.2
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project
+$ git init -b main
+Initialized empty Git repository in D:/git project/.git/
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git config --global user.name "ungarala ajaykumar"
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ ^C
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git config --global user.email "ungaralaajaykumar123@gmail.com"
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        content.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git add content.txt
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git add demo.txt
+fatal: pathspec 'demo.txt' did not match any files
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   content.txt
+
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git commit -m "first commit"
+[main (root-commit) f6c9682] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 content.txt
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git log
+commit f6c9682a4a517bb737522ca65909ca8a81122521 (HEAD -> main)
+Author: ungarala ajaykumar <ungaralaajaykumar123@gmail.com>
+Date:   Mon Oct 13 16:10:23 2025 +0530
+
+    first commit
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   content.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git add content.txt
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   content.txt
+
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git commit -m 'second commit"
+> git commit -m "second commit"
+>
+> git log
+> git commit -m 'second commit"
+git commit -m "second commit"
+
+$ git log
+>
+>
+>
+> git --version
+>
+>
+>  git add content.txt
+> git --version
+> $
+>
+>
+>
+>
+>
+> git status
+>
+> ^C
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git log
+commit f6c9682a4a517bb737522ca65909ca8a81122521 (HEAD -> main)
+Author: ungarala ajaykumar <ungaralaajaykumar123@gmail.com>
+Date:   Mon Oct 13 16:10:23 2025 +0530
+
+    first commit
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git commit -m "second commit"
+[main ccf7746] second commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git log
+commit ccf7746c40b0d22f859a94a5a0e0c63b1d1e50f3 (HEAD -> main)
+Author: ungarala ajaykumar <ungaralaajaykumar123@gmail.com>
+Date:   Mon Oct 13 18:49:49 2025 +0530
+
+    second commit
+
+commit f6c9682a4a517bb737522ca65909ca8a81122521
+Author: ungarala ajaykumar <ungaralaajaykumar123@gmail.com>
+Date:   Mon Oct 13 16:10:23 2025 +0530
+
+    first commit
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git add context. txt
+fatal: pathspec 'context.' did not match any files
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Dell@DESKTOP-9AO4TJM MINGW64 /d/git project (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
